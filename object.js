@@ -8,7 +8,7 @@ function Piece(block,color){
 
     // we need to control the
     this.x = 3;
-    this.y = 2;
+    this.y = -2;
 }
 
 let Block = Piece.prototype;
