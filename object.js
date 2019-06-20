@@ -59,27 +59,28 @@ Block.lock = function(){
         }
     }
     // remove full rows
-    for(r = 0; r < ROW; r++){
-        let isRowFull = true;
-        for( c = 0; c < COL; c++){
-            // isRowFull = isRowFull && (board[r][c] != VACANT);
-        }
-        // if(isRowFull){
-        //     // if the row is full
-        //     // we move down all the rows above it
-        //     for( y = r; y > 1; y--){
-        //         for( c = 0; c < COL; c++){
-        //             board[y][c] = board[y-1][c];
-        //         }
-        //     }
-        //     // the top row board[0][..] has no row above it
-        //     for( c = 0; c < COL; c++){
-        //         board[0][c] = VACANT;
-        //     }
-        //     // increment the score
-        //     score += 10;
-        // }
-    }
+//     for(r = 0; r < ROW; r++){
+//         let isRowFull = true;
+//         for( c = 0; c < COL; c++){
+//             // isRowFull = isRowFull && (board[r][c] != VACANT);
+//         }
+//         if(isRowFull){
+//             // if the row is full
+//             // we move down all the rows above it
+//             for( y = r; y > 1; y--){
+//                 for( c = 0; c < COL; c++){
+//                     board[y][c] = board[y-1][c];
+//                 }
+//             }
+//             // the top row board[0][..] has no row above it
+//             for( c = 0; c < COL; c++){
+//                 board[0][c] = VACANT;
+//             }
+//             // increment the score
+//             score += 10;
+//         }
+//     }
+    this.removeFullRows();
     // update the board
     drawBoard();
 
