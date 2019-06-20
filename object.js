@@ -80,7 +80,7 @@ Block.lock = function(){
 //             score += 10;
 //         }
 //     }
-//     this.removeFullRows();
+    this.removeFullRows();
     // update the board
     drawBoard();
 
